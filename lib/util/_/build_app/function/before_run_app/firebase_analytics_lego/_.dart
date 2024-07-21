@@ -6,4 +6,5 @@ import '../../../../../../main.dart';
 @ReadyBeforeRunApp(index: 1.1001)
 Future<void> readyForFirebaseAnalyticsLego() async {
   FirebaseAnalytics analytics = FirebaseAnalytics.instance;
+  await analytics.logAppOpen();
 }
